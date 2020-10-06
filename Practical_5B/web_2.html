@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Program</title>
+</head>
+
+<style>
+	body{
+		background-color: black;
+	}
+	h1,h2,h3,h4,h5,h6{
+		color :whitesmoke;
+		text-align:center;
+		mix-blend-mode: difference;
+	}
+	p,code{
+		color:whitesmoke;
+		mix-blend-mode: difference;
+		font-size: 20px;
+	}
+	a{
+		color: #a200ff;
+    	font-size: 20px;
+    	letter-spacing: 0px;
+	}
+	.color{
+		color:red;
+	}
+</style>
+
+	<header>
+		<h1 style="color: purple;">Sum & Average of 10 Numbers</h1>
+	</header>
+
+<section>
+	 
+		<header>
+			<h3 style="font-size: 22px;"><strong><em>Problem Statemen</em>t</strong></h3>
+			<h2 style="color:red"><em>Code For Given Problem Statement!</em></h2>
+		</header>
+			<pre>
+				<code style="color: green;">
+					#include iostream
+					using namespace std;
+						int main()
+						{
+							int no,sum=0;
+							float avg;
+							cout "Enter 10 Numbers ";
+							for(int i=0;i!=10;i++)
+							{
+								cout "\nEnter Number : " i+1;
+								cin no;
+								sum += no;
+							}
+							avg = sum/10.0;
+							cout "Sum : " sum;
+							cout "Average : " avg;
+							return 0;
+						}	
+				</code>
+			</pre>
+</section>
+<hr>
+<div>
+		<header>
+			<h4 style="font-size: 24px;"><em>Sample Input</em></h4>
+		</header>
+		<p> Enter 10 Numbers:<br>
+		Enter Number : 1-><kbd>1</kbd><br>
+		Enter Number : 2-><kbd>2</kbd><br>
+		Enter Number : 3-><kbd>3</kbd><br>
+		Enter Number : 4-><kbd>4</kbd><br>
+		Enter Number : 5-><kbd>5</kbd><br>
+		Enter Number : 6-><kbd>6</kbd><br>
+		Enter Number : 7-><kbd>7</kbd><br>
+		Enter Number : 8-><kbd>8</kbd><br>
+		Enter Number : 9-><kbd>9</kbd><br>
+		Enter Number : 10-><kbd>10</kbd><br>
+		Sum and Average are : <samp>55,</samp>
+		<samp>5.500000 resp.</samp><br>
+		</p>
+</div>
+<hr>
+<aside>
+		<h4 style="font-size: 24px;">Variables used in the Program</h4>
+		<p> int <var>no</var>,<var>sum</var>,<var>i</var><br>
+		float <var>avg</var></p>
+		<h5 style="font-size: 18px; text-align: left;">Complexity for this program is <strong><i>O(n)<i></strong></h5>
+</aside>
+<hr>
+<footer>
+		<header>
+			<h4 style="font-size: 20px;">
+				<a href="https://www.w3resource.com/cpp-exercises/for-loop/cpp-for-loop-exercise-2.php">Source Code</a>
+				 for this Program.</h4>
+		</header>
+</footer>
+</body>
+</html>
