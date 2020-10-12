@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Feedback Form
+        </title>
+    </head>
+
+<body>
+    <script type="text/javascript">
+        function rest() {
+            location.reload(true);
+        }
+
+        function submt() {
+            alert("Response Submitted Successfully!");
+        }
+
+        function Hunt(){
+            alert("You are Now Haunted!!");
+        }
+    </script>
+
+    <form>
+        <header>
+            <h1>Feedback Form</h1>
+            <p>Name:</p>
+        </header>
+
+        <label for="fname">First Name&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+        <label for="sname">Last Name:</label><br/>
+        <input type="text" id="fname" name="fname"/>
+        <input type="text" id="sname" name="sname"/><br />
+
+        <p>Gender:</p>
+        <label for="gender">Male:</label>
+        <input type="radio" id="gender" name="gender"/>
+        <label for="gender">&nbsp;Female:</label>
+        <input type="radio" id="gender" name="gender" />
+        <label for="gender">&nbsp;Other:</label>
+        <input type="radio" id="gender" name="gender" /><br />
+        <br />
+
+        <label for="phone">Phone number:</label><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-45-678"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+        <small>Format: 123-45-678</small><br><br>
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" placeholder="abcd@mail.com"/><br /><br /> *:
+
+        <label for="img">Select image:</label>
+        <input type="file" id="img" name="img" accept="image/*" /><br /><br /> *:
+
+        <label for="txt">Select text file:</label>
+        <input type="file" id="txt" name="txt" accept="text/*" /><br /><br /> *:
+
+        <label for="pdf">Select pdf file:</label>
+        <input type="file" id="pdf" name="pdf" accept="pdf/*" /><br /><br /> *:
+
+        <label for="fle">Select file:</label>
+        <input type="file" id="fle" name="fle" accept="file/*" /><br /><br />
+
+        <label for="StudentReview">Your reviews:</label><br />
+        <textarea id="StudentReview" name="StudentReview" rows="5" cols="50">   
+        </textarea><br /><br />
+        
+        <button onclick="rest">Reset</button>
+        <button type="submit" id="submit" name="submit" onclick="return submt()" >Submit</button><br>
+        <input type="image" name="Name of image button" src="img.JPG" height="100px" width="150px" alt="Img_Button" onclick="return Hunt()">
+
+    </form>
+
+</body>
+</html>
