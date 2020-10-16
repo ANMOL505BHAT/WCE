@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            MH-CET Form
+        </title>
+    </head>
+
+<body>
+    <script type="text/javascript">
+        function rest() {
+            location.reload(true);
+        }
+
+        function submt() {
+            alert("Response Submitted Successfully!");
+        }
+    </script>
+
+    <form action="/action_page.php" method="get">
+        <section>
+            <header>
+                <h1>MH-CET Registration (2021)</h1>
+            </header>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend>Student Information:</legend>
+            <p>Student Name:</p>
+            <label for="fname">First Name&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+            <label for="mname">Middle Name&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+            <label for="lname">Last Name:</label><br/>
+            <input type="text" id="fname" name="fname" required/>
+            <input type="text" id="mname" name="mname"/>
+            <input type="text" id="lname" name="lname" required/><br /><br/>
+
+            <label for="mrname">Mother Name:</label><br/>
+            <input type="text" id="mrname" name="mrname" required/><br /><br/>
+            <label for="frname">Father Name:</label><br/>
+            <input type="text" id="frname" name="frname" required/><br />
+    
+            <p>Gender:</p>
+            <label for="gender">Male:</label>
+            <input type="radio" id="gender" name="gender"/>
+            <label for="gender">&nbsp;Female:</label>
+            <input type="radio" id="gender" name="gender" />
+            <label for="gender">&nbsp;Other:</label>
+            <input type="radio" id="gender" name="gender" /><br />
+            <br />
+            
+            <label for="phone">Phone number:</label><br/>
+            <input type="tel" id="phone" name="phone" placeholder="123-45-678-90" required><br><br>
+    
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" placeholder="abcd@mail.com" required/><br /><br /> 
+
+
+            <label for="country">Country:</label><br/>
+            <input type="text" id="country" name="country" value="India" readonly><br><br>*:
+
+            <label for="ID_Proof">ID Proof Type:</label>
+            <select id="ID_Proof">
+                <option value="Aadhaar_Card">Aadhaar Card</option>
+                <option value="Voter_Card">Voter Card</option>
+                <option value="Ration_Card">Ration Card</option>
+                <option value="PRC" selected>Permanent Residence Certificate</option>
+            </select>
+            <br/>
+            *:
+            <label for="fle">Select ID Proof:</label>
+            <input type="file" id="fle" name="fle" accept="file/*" required/><br /><br />
+
+            <label for="addr">Address:</label><br />
+            <textarea id="addr" name="addr" rows="6" cols="50">  
+            </textarea><br /><br />
+
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend>Educational Information:</legend>
+
+                <label for="Qualification">Qualification:</label><br/>
+                <select name="Qualification" id="Qualification" size="4" multiple required>
+                    <option value="8th">8th Pass</option>
+                    <option value="10th">10th Pass</option>
+                    <option value="11th">11th Pass</option>
+                    <option value="12th" selected>12th Pass</option>
+                </select>
+<br/><br/>
+                <label for="Branch">Branch:</label><br/>
+                <select name="Branch" id="Branch" size="2" multiple required>
+                    <option value="Commerce">Commerce</option>
+                    <option value="Science" selected>Science</option>
+                </select>
+
+                <br/><br/>
+
+                <label for="College_Name">College Name:</label>
+                <input list="College_Names" name="College_Name" id="College_Name">
+                <datalist id="College_Names">
+                    <option value="College Of Engineering, Pune">
+                    <option value="Walchand College of Engineering, Sangli">
+                    <option value="IIT, Vishrambagh">
+                    <option value="Bharati Vidyapeeth, Meeraj">
+                </datalist>
+
+                <br/><br/>
+                
+                <label for="UN">University Name:</label>
+                <input list="UNs" name="UN" id="UN">
+                <datalist id="UNs">
+                    <option value="Shivaji University">
+                    <option value="Pune University">
+                    <option value="Mumbai University">
+                </datalist>
+<br/><br/>
+                <label for="Exam_No">Exam Number:</label><br/>
+                <input type="text" name="Exam_No" id="Exam_No" required/>
+              </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend>Exam Preferences:</legend>
+                
+                <label for="Paper_Branch">MH-CET Exam Paper Branch:</label>
+                <select name="Paper_Branch" id="Paper_Branch"required>
+                    <option value="Pune">Pune</option>
+                    <option value="Mumbai" selected>Mumbai</option>
+                </select>
+                
+<br/><br/>
+            
+                <label for="citys">Choose City:</label>
+                <select  name="citys" id="citys">
+                    <optgroup label="Jammu & Kashmir">
+                        <option value="Jammu">Jammu</option>
+                        <option value="Kashmir">Kashmir</option>
+                    </optgroup>
+                    <optgroup label="Maharashtra">
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Pune">Pune</option>
+                    </optgroup>
+                </select>
+                
+
+              </fieldset>
+        </section>
+
+        <br/>
+        <button onclick="rest">Reset</button>
+        <button type="submit" id="submit" name="submit" onclick="return submt()" >Submit</button><br>
+
+    </form>
+
+</body>
+</html>
